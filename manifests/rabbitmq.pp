@@ -1,4 +1,5 @@
 # Install rabbitmq
 class role::rabbitmq {
-  include ::profile::baseconfig
+  require ::profile::baseconfig
+  include ::profile::services::rabbitmq
 }

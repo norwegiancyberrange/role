@@ -1,4 +1,4 @@
 # Base role
 class role::base {
-  include ::profile::baseconfig
+  require ::profile::baseconfig
 }

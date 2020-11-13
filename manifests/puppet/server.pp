@@ -1,4 +1,5 @@
 # Install puppetserver
 class role::puppet::server {
-  include ::profile::baseconfig
+  require ::profile::baseconfig
+  include ::profile::services::puppet::server
 }
